@@ -1,4 +1,4 @@
-.backdrop {
+  .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -149,15 +149,14 @@
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .checkbox:checked {
-    .checkbox-icon {
-    border-color: $accent-color;
-    background-color: $accent-color;
-    background-image: url(../../images/icon-check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    }
-  }
+.checkbox:checked + .checkbox-icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+  background-image: url(../../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+  
   
   .checkbox-label {
     display: flex;
@@ -169,9 +168,8 @@
   color: $primary-text-color;
   margin-left: 8px;
   align-items: center;
-  
-  
   }
+
   .checkbox-label a{
     color: $accent-color;
     text-decoration: underline;

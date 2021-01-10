@@ -8,10 +8,14 @@
   .clients-list-item {
     width: 170px;
     height: 90px;
-   
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-  .clients-list-item:not(:last-child) {
-    margin-right: 30px;
+  
+  .client-logo {
+    fill: $logo-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .client-link {
     display: flex;
@@ -23,17 +27,14 @@
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
-  }
-  .client-logo {
-    fill: $logo-color;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+     border-color: $accent-color;
+    }
+    &:hover .client-logo,
+    &:focus .client-logo {
+     fill: $accent-color;
+    }
   }
   
-  .client-link:hover,
-  .client-link:focus {
-    border-color: $accent-color;
-  }
-  .client-link:hover .client-logo,
-  .client-link:focus .client-logo {
-    fill: $accent-color;
-  }
+  

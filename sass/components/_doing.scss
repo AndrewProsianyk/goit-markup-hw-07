@@ -16,6 +16,9 @@
   }
   .doing-item {
     position: relative;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   .doing-caption {
     display: flex;
@@ -26,24 +29,18 @@
     background: rgba(47, 48, 58, 0.8);
     align-items: center;
     justify-content: center;
-    
-  
   }
+
   .caption {
     display: block;
     font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: $secondary-title-color;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  
-  
-  
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondary-title-color;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
   
   
-  .doing-item:not(:last-child) {
-    margin-right: 30px;
-  }
+  

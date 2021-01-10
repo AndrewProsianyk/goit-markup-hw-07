@@ -44,14 +44,16 @@
     padding-bottom: 32px;
     padding-top: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
   .nav-link + .nav-link {
     margin-left: 50px;
   }
-  .nav-link .item:hover,
-  .nav-link .item:focus {
-    color: $accent-color;
-  }
+ 
   
   .nav-list .current {
     color: $accent-color;
@@ -59,6 +61,16 @@
   .info-head {
     display: flex;
     align-items: center;
+  }
+  .info-link .item {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &:hover .info-icon,
+    &:focus .info-icon {
+      fill: $accent-color;
+    }
   }
   .info-link + .info-link {
     margin-left: 50px;
@@ -81,14 +93,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
   }
-  .info-link .item:hover,
-  .info-link .item:focus {
-    color: $accent-color;
-  }
-  .info-link .item:hover .info-icon,
-  .info-link .item:focus .info-icon {
-    fill: $accent-color;
-  }
+  
   .item.current::after {
     display: block;
     position: absolute;

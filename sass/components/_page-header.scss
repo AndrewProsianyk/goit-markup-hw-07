@@ -1,4 +1,5 @@
-.header-container {
+@import "./logo";
+  .header-container {
     display: flex;
     justify-content: space-between;
   }
@@ -6,28 +7,7 @@
     display: flex;
     align-items: center;
   }
-  .logo-part {
-    color: $accent-color;
-  }
-  .header-logo {
-    margin-right: 93px;
-    font-family: Raleway;
-    color: $primary-title-color;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-  }
-  .footer-logo {
-    display: block;
-    margin-bottom: 20px;
-    font-family: Raleway;
-    color: $secondary-title-color;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-  }
+
   .nav-list {
     display: flex;
   }

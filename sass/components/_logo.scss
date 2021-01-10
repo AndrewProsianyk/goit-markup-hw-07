@@ -3,7 +3,7 @@
   }
   .header-logo {
     margin-right: 93px;
-    font-family: Raleway;
+    font-family: $logo-font;
     color: $primary-title-color;
     font-weight: 700;
     font-size: 26px;
@@ -13,7 +13,7 @@
   .footer-logo {
     display: inline-block;
     margin-bottom: 20px;
-    font-family: Raleway;
+    font-family: $logo-font;
     color: $secondary-title-color;
     font-weight: 700;
     font-size: 26px;
